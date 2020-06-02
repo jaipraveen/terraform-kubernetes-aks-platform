@@ -7,7 +7,7 @@ resource "kubernetes_namespace" "velero" {
 }
 
 module "namespace_velero" {
-  source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-namespace.git"
+  source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-namespace.git?ref=v1.0.0"
 
   name = "${kubernetes_namespace.velero.metadata.0.name}"
   namespace_admins = {

@@ -1,5 +1,5 @@
 # module "helm_aad_pod_identity" {
-#   source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-aad-pod-identity.git"
+#   source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-aad-pod-identity.git?ref=v1.0.0"
 #   chart_version = "1.5.3"
 #   dependencies = [
 #     "${module.namespace_default.depended_on}",

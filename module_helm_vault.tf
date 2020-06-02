@@ -17,7 +17,7 @@
 # }
 
 # module "helm_vault" {
-#   source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-vault.git"
+#   source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-vault.git?ref=v1.0.0"
 
 #   chart_version = "0.0.6"
 #   dependencies = [

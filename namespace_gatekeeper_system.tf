@@ -11,7 +11,7 @@ resource "kubernetes_namespace" "gatekeeper_system" {
 }
 
 module "namespace_gatekeeper_system" {
-  source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-namespace.git"
+  source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-namespace.git?ref=v1.0.0"
 
   name = "${kubernetes_namespace.gatekeeper_system.metadata.0.name}"
   namespace_admins = {

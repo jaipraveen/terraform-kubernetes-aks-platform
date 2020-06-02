@@ -1,5 +1,5 @@
 # module "helm_drupalwxt" {
-#   source = "git::https://github.com/drupalwxt/terraform-kubernetes-drupalwxt.git"
+#   source = "git::https://github.com/drupalwxt/terraform-kubernetes-drupalwxt.git?ref=v1.0.0"
 
 #   chart_version = "0.1.12"
 #   dependencies = [
