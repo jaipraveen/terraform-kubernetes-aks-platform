@@ -1,7 +1,7 @@
 module "helm_prometheus_operator" {
   source = "git::https://github.com/canada-ca-terraform-modules/terraform-kubernetes-prometheus.git"
 
-  chart_version = "0.0.2"
+  chart_version = "0.1.0"
   dependencies = [
     "${module.namespace_monitoring.depended_on}",
     "${module.helm_istio.depended_on}",
